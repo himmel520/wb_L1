@@ -5,18 +5,18 @@ import "fmt"
 // 11. Реализовать пересечение двух неупорядоченных множеств.
 
 // создание множества
-func set(nums []int) map[int]bool {
-	set := make(map[int]bool)
+func set(nums []int) map[int]struct{} {
+	set := make(map[int]struct{})
 	// добавление уникальных значений в мапу
 	for _, v := range nums {
-		set[v] = true
+		set[v] = struct{}{}
 	}
 
 	return set
 }
 
 // нахождение пересечения множеств
-func intersection(set1 map[int]bool, set2 map[int]bool) []int {
+func intersection(set1 map[int]struct{}, set2 map[int]struct{}) []int {
 	intersection := []int{}
 	// итерируемся по множеству
 	for k := range set1 {

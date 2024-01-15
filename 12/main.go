@@ -6,10 +6,10 @@ import "fmt"
 // создать для нее собственное множество.
 
 func set(strings []string) []string {
-	mappa := make(map[string]bool)
+	mappa := make(map[string]struct{})
 	// добавление уникальных значений в мапу
 	for _, v := range strings {
-		mappa[v] = true
+		mappa[v] = struct{}{}
 	}
 
 	var set []string
