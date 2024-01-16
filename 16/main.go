@@ -19,7 +19,7 @@ func quickSort(slice []int) []int {
 	for _, v := range slice {
 		switch {
 		case v < slice[pivot]:
-			// append может быть неэффективным при больших данных
+			// append неэффективен при больших обьемах данных, тк создается новый срез
 			less = append(less, v)
 		case v == slice[pivot]:
 			equal = append(equal, v)
