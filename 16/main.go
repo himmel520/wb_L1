@@ -37,7 +37,7 @@ func main() {
 	fmt.Println(quickSort(slice))
 
 	// example
-	// slice 		   pivot less  equal greater
+	// slice           pivot less  equal greater
 	// [2 6 1 3 0 5 2] 2     [1 0] [2 2] [6 3 5]
 	// [1 0]           0     []    [0]   [1]
 	// [6 3 5]         5     [3]   [5]   [6]
