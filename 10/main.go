@@ -15,7 +15,7 @@ func group(temp []float64) map[int][]float64 {
 	// инициализируем мапу
 	group := map[int][]float64{}
 
-	// проходимся по temp
+	// проходим по temp
 	for _, v := range temp {
 		// получаем ключ(шаг 10)
 		k := int(v/10) * 10
